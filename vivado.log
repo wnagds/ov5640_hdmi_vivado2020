@@ -1,0 +1,209 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun  5 04:41:04 2024
+# Process ID: 16660
+# Current directory: C:/Users/wnagds/Desktop/hdmi_ov5640_2017
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4432 C:\Users\wnagds\Desktop\hdmi_ov5640_2017\hdmi_ov5640_2017.xpr
+# Log file: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/vivado.log
+# Journal file: C:/Users/wnagds/Desktop/hdmi_ov5640_2017\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wnagds/Desktop/hdmi_ov5640_2017/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_axi_vdma_0_0
+system_v_vid_in_axi4s_0_0
+system_rst_ps7_0_100M_0
+system_v_axi4s_vid_out_0_0
+system_v_tc_0_0
+system_clk_wiz_0_0
+system_xbar_0
+system_ps7_0_axi_periph_0
+system_axi_smc_1
+system_system_ila_2_0
+system_system_ila_0_1
+system_auto_pc_0
+
+INFO: [Project 1-230] Project 'hdmi_ov5640_2017.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1220.402 ; gain = 80.727
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd}
+Reading block design file <C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- alientek.com:user:ov5640_capture_data:1.0 - ov5640_capture_data_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- openedv.com:user:DVI_Transmitter:1.0 - DVI_Transmitter_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_2
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from block design file <C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd>
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {system_clk_wiz_0_0 system_v_axi4s_vid_out_0_0 system_rst_ps7_0_100M_0 system_system_ila_2_0 system_v_tc_0_0 system_system_ila_0_1 system_axi_vdma_0_0 system_axi_smc_1 system_v_vid_in_axi4s_0_0 system_ps7_0_axi_periph_0}] -log ip_upgrade.log
+Upgrading 'C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-3422] Upgraded system_axi_smc_1 (AXI SmartConnect 1.0) from revision 7 to revision 14
+INFO: [IP_Flow 19-3422] Upgraded system_axi_vdma_0_0 (AXI Video Direct Memory Access 6.3) from revision 3 to revision 10
+INFO: [IP_Flow 19-1972] Upgraded system_clk_wiz_0_0 from Clocking Wizard 5.4 to Clocking Wizard 6.0
+INFO: [IP_Flow 19-3422] Upgraded system_ps7_0_axi_periph_0 (AXI Interconnect 2.1) from revision 16 to revision 23
+INFO: [IP_Flow 19-3422] Upgraded system_rst_ps7_0_100M_0 (Processor System Reset 5.0) from revision 12 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded system_system_ila_0_1 (System ILA 1.1) from revision 1 to revision 8
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_CNT' from '0' to '0.5' has been ignored for IP 'system_system_ila_2_0'
+INFO: [IP_Flow 19-3422] Upgraded system_system_ila_2_0 (System ILA 1.1) from revision 1 to revision 8
+INFO: [IP_Flow 19-3422] Upgraded system_v_axi4s_vid_out_0_0 (AXI4-Stream to Video Out 4.0) from revision 8 to revision 11
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'fifo_read_level'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sof_state_out'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'system_v_axi4s_vid_out_0_0'. These changes may impact your design.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'GEN_F0_VSYNC_HSTART' from '640' to '1280' has been ignored for IP 'system_v_tc_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'GEN_F0_VSYNC_HEND' from '695' to '1280' has been ignored for IP 'system_v_tc_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'GEN_F0_VBLANK_HSTART' from '640' to '1280' has been ignored for IP 'system_v_tc_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'GEN_F0_VBLANK_HEND' from '640' to '1280' has been ignored for IP 'system_v_tc_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'GEN_F1_VSYNC_HSTART' from '695' to '1280' has been ignored for IP 'system_v_tc_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'GEN_F1_VSYNC_HEND' from '695' to '1280' has been ignored for IP 'system_v_tc_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'GEN_F1_VBLANK_HSTART' from '640' to '1280' has been ignored for IP 'system_v_tc_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'GEN_F1_VBLANK_HEND' from '640' to '1280' has been ignored for IP 'system_v_tc_0_0'
+WARNING: [IP_Flow 19-3501] Upgraded system_v_tc_0_0 from Video Timing Controller 6.1 to Video Timing Controller 6.2, with warnings. Please review the message log.
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sof_state'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'system_v_tc_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3422] Upgraded system_v_vid_in_axi4s_0_0 (Video In to AXI4-Stream 4.0) from revision 7 to revision 9
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'system_system_ila_2_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/wnagds/Desktop/hdmi_ov5640_2017/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'system_v_axi4s_vid_out_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/wnagds/Desktop/hdmi_ov5640_2017/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'system_v_tc_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/wnagds/Desktop/hdmi_ov5640_2017/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\wnagds\Desktop\hdmi_ov5640_2017\hdmi_ov5640_2017.srcs\sources_1\bd\system\system.bd> 
+INFO: [BD 41-2124] The block design file <C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd> has changed from an XML format to a JSON format. All flows are expected to work as in prior versions of Vivado. Please contact your Xilinx Support representative, in case of any issues.
+Wrote  : <C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/wnagds/Desktop/hdmi_ov5640_2017/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 2029.113 ; gain = 342.148
+export_ip_user_files -of_objects [get_ips {system_clk_wiz_0_0 system_v_axi4s_vid_out_0_0 system_rst_ps7_0_100M_0 system_system_ila_2_0 system_v_tc_0_0 system_system_ila_0_1 system_axi_vdma_0_0 system_axi_smc_1 system_v_vid_in_axi4s_0_0 system_ps7_0_axi_periph_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd]
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_ILA_CLK_FREQ(100000000) on '/ila_lib' with propagated value(1e+08). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_ILA_CLK_FREQ(100000000) on '/ila_lib' with propagated value(1e+08). Command ignored
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+Wrote  : <C:\Users\wnagds\Desktop\hdmi_ov5640_2017\hdmi_ov5640_2017.srcs\sources_1\bd\system\system.bd> 
+VHDL Output written to : C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/hdl/system_wrapper.v
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov5640_capture_data_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DVI_Transmitter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+Exporting to file c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/hw_handoff/system_axi_smc_1.hwh
+Generated Block Design Tcl file c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/hw_handoff/system_axi_smc_1_bd.tcl
+Generated Hardware Definition File c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/synth/system_axi_smc_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/hw_handoff/system_system_ila_2_0.hwh
+Generated Block Design Tcl file c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/hw_handoff/system_system_ila_2_0_bd.tcl
+Generated Hardware Definition File c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/synth/system_system_ila_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_2 .
+Exporting to file c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_system_ila_0_1/bd_0/hw_handoff/system_system_ila_0_1.hwh
+Generated Block Design Tcl file c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_system_ila_0_1/bd_0/hw_handoff/system_system_ila_0_1_bd.tcl
+Generated Hardware Definition File c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_system_ila_0_1/bd_0/synth/system_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 2367.875 ; gain = 338.762
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_vdma_0_0] }
+catch { config_ip_cache -export [get_ips -all system_ov5640_capture_data_0_0] }
+catch { config_ip_cache -export [get_ips -all system_v_vid_in_axi4s_0_0] }
+catch { config_ip_cache -export [get_ips -all system_DVI_Transmitter_0_0] }
+catch { config_ip_cache -export [get_ips -all system_v_axi4s_vid_out_0_0] }
+catch { config_ip_cache -export [get_ips -all system_v_tc_0_0] }
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all system_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_smc_1] }
+catch { config_ip_cache -export [get_ips -all system_system_ila_2_0] }
+catch { config_ip_cache -export [get_ips -all system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd]
+launch_runs system_processing_system7_0_0_synth_1 system_ov5640_capture_data_0_0_synth_1 system_DVI_Transmitter_0_0_synth_1 system_axi_vdma_0_0_synth_1 system_v_vid_in_axi4s_0_0_synth_1 system_v_axi4s_vid_out_0_0_synth_1 system_v_tc_0_0_synth_1 system_clk_wiz_0_0_synth_1 system_rst_ps7_0_100M_0_synth_1 system_axi_smc_1_synth_1 system_system_ila_2_0_synth_1 system_system_ila_0_1_synth_1 system_xbar_0_synth_1 system_auto_pc_0_synth_1 -jobs 12
+[Wed Jun  5 04:43:57 2024] Launched system_processing_system7_0_0_synth_1, system_ov5640_capture_data_0_0_synth_1, system_DVI_Transmitter_0_0_synth_1, system_axi_vdma_0_0_synth_1, system_v_vid_in_axi4s_0_0_synth_1, system_v_axi4s_vid_out_0_0_synth_1, system_v_tc_0_0_synth_1, system_clk_wiz_0_0_synth_1, system_rst_ps7_0_100M_0_synth_1, system_axi_smc_1_synth_1, system_system_ila_2_0_synth_1, system_system_ila_0_1_synth_1, system_xbar_0_synth_1, system_auto_pc_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_processing_system7_0_0_synth_1/runme.log
+system_ov5640_capture_data_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_ov5640_capture_data_0_0_synth_1/runme.log
+system_DVI_Transmitter_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_DVI_Transmitter_0_0_synth_1/runme.log
+system_axi_vdma_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_axi_vdma_0_0_synth_1/runme.log
+system_v_vid_in_axi4s_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_v_vid_in_axi4s_0_0_synth_1/runme.log
+system_v_axi4s_vid_out_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_v_axi4s_vid_out_0_0_synth_1/runme.log
+system_v_tc_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_v_tc_0_0_synth_1/runme.log
+system_clk_wiz_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_clk_wiz_0_0_synth_1/runme.log
+system_rst_ps7_0_100M_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_rst_ps7_0_100M_0_synth_1/runme.log
+system_axi_smc_1_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_axi_smc_1_synth_1/runme.log
+system_system_ila_2_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_system_ila_2_0_synth_1/runme.log
+system_system_ila_0_1_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_system_ila_0_1_synth_1/runme.log
+system_xbar_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_xbar_0_synth_1/runme.log
+system_auto_pc_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.srcs/sources_1/bd/system/system.bd] -directory C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.ip_user_files -ipstatic_source_dir C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.cache/compile_simlib/modelsim} {questa=C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.cache/compile_simlib/questa} {riviera=C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.cache/compile_simlib/riviera} {activehdl=C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_axi_smc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_axi_vdma_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_system_ila_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_system_ila_2_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_xbar_0
+[Wed Jun  5 04:46:00 2024] Launched system_axi_vdma_0_0_synth_1, system_axi_smc_1_synth_1, system_system_ila_2_0_synth_1, system_system_ila_0_1_synth_1, system_xbar_0_synth_1, system_auto_pc_0_synth_1...
+Run output will be captured here:
+system_axi_vdma_0_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_axi_vdma_0_0_synth_1/runme.log
+system_axi_smc_1_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_axi_smc_1_synth_1/runme.log
+system_system_ila_2_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_system_ila_2_0_synth_1/runme.log
+system_system_ila_0_1_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_system_ila_0_1_synth_1/runme.log
+system_xbar_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_xbar_0_synth_1/runme.log
+system_auto_pc_0_synth_1: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/system_auto_pc_0_synth_1/runme.log
+[Wed Jun  5 04:46:00 2024] Launched synth_1...
+Run output will be captured here: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2521.996 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Jun  5 14:21:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.runs/impl_1/runme.log
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_hw_manager
+write_hw_platform -fixed -include_bit -force -file C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.vitis/system_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.vitis/system_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.2/data\embeddedsw) loading 0 seconds
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/hdmi_ov5640_2017.vitis/system_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2765.688 ; gain = 166.508
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  5 14:47:17 2024...

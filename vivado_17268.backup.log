@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun  5 04:36:54 2024
+# Process ID: 17268
+# Current directory: C:/Users/wnagds/Desktop/hdmi_ov5640_2017
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17280 C:\Users\wnagds\Desktop\hdmi_ov5640_2017\hdmi_ov5640_2017.xpr
+# Log file: C:/Users/wnagds/Desktop/hdmi_ov5640_2017/vivado.log
+# Journal file: C:/Users/wnagds/Desktop/hdmi_ov5640_2017\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/ZYNQ_Vitis_7020/22_vdma_lcd/vdma_lcd.xpr
+INFO: [Project 1-313] Project file moved from 'F:/2020_project/ZYNQ_Vitis_7020/vdma_lcd' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/BaiduNetdiskDownload/ZYNQ_Vitis_7020/22_vdma_lcd/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1143.641 ; gain = 0.000
+open_bd_design {D:/BaiduNetdiskDownload/ZYNQ_Vitis_7020/22_vdma_lcd/vdma_lcd.srcs/sources_1/bd/system/system.bd}
+Reading block design file <D:/BaiduNetdiskDownload/ZYNQ_Vitis_7020/22_vdma_lcd/vdma_lcd.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- www.alientek.com:user:rgb2lcd:1.0 - rgb2lcd_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Successfully read diagram <system> from block design file <D:/BaiduNetdiskDownload/ZYNQ_Vitis_7020/22_vdma_lcd/vdma_lcd.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.422 ; gain = 190.051
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  5 04:39:14 2024...
